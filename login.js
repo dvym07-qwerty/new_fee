@@ -31,14 +31,8 @@ function login() {
         error.style.display = 'block';
         return;
     }
-const savedEmail = localStorage.getItem('userEmail');
-const savedPassword = localStorage.getItem('userPassword');
-
-    if (email !== savedEmail || password !== savedPassword) {
-        error.textContent = '⚠️ Email or Password is wrong!';
-        error.style.display = 'block';
-        return;
-    }
+localStorage.setItem('userEmail', email);
+localStorage.setItem('userPassword', password);    
 window.location.href = 'home.html';
 
     
