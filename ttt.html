@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+      padding: 40px;
+    }
+
+    h1 { margin-bottom: 10px; }
+
+    #status {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #board {
+      display: inline-grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 6px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background: white;
+      border: 2px solid #999;
+      font-size: 48px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cell:hover { background: #e8e8e8; }
+    .cell.x { color: #e74c3c; }
+    .cell.o { color: #2980b9; }
+
+    #reset {
+      margin-top: 24px;
+      padding: 10px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+
+    #reset:hover { background: #555; }
+  </style>
+</head>
+<body>
+    <body>
+
+  <h1>Tic Tac Toe</h1>
+  <p>You are <strong style="color:#e74c3c">X</strong> &nbsp;|&nbsp; Computer is <strong style="color:#2980b9">O</strong></p>
+  <div id="status">Your turn</div>
+
+  <div id="board">
+    <div class="cell" onclick="play(0)"></div>
+    <div class="cell" onclick="play(1)"></div>
+    <div class="cell" onclick="play(2)"></div>
+    <div class="cell" onclick="play(3)"></div>
+    <div class="cell" onclick="play(4)"></div>
+    <div class="cell" onclick="play(5)"></div>
+    <div class="cell" onclick="play(6)"></div>
+    <div class="cell" onclick="play(7)"></div>
+    <div class="cell" onclick="play(8)"></div>
+    </div>
+
+  <br>
+  <button id="reset" onclick="resetGame()">Restart</button>
+  <script src="ttt.js"></script>
+</body>
+</html>
