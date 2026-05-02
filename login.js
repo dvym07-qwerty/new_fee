@@ -8,19 +8,7 @@ function login() {
         error.textContent = '⚠️ Please fill in both fields!';
         error.style.display = 'block';
         return;
-<<<<<<< HEAD
-}
-    if (!emailFormat.test(email)) {
-    error.textContent = '⚠️ Please enter a valid email like: you@example.com';
-    error.style.display = 'block';
-    return;
-    
-}
-localStorage.setItem('userEmail', email);
-localStorage.setItem('userPassword', password);
-=======
     }
->>>>>>> fbfe3b95d1a664337b38a3f5002acf8832a966bf
 
     if (!emailFormat.test(email)) {
         error.textContent = '⚠️ Please enter a valid email like: you@example.com';
@@ -33,7 +21,7 @@ localStorage.setItem('userPassword', password);
         error.style.display = 'block';
         return;
     }
+window.location.href = 'home.html';
 
-    error.style.display = 'none';
-    window.location.href = 'home.html';
+    
 }
