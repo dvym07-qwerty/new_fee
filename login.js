@@ -12,12 +12,8 @@ function login(){
     error.textContent = '⚠️ Please enter a valid email like: you@example.com';
     error.style.display = 'block';
     return;
-     
+    
 }
- if (password.length < 7) {
-        error.textContent = '⚠️ Password must be at least 7 characters!';
-        error.style.display = 'block';
-        return;
- }
+
 window.location.href = 'home.html'; 
 }
