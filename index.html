@@ -82,14 +82,28 @@
 
 </head>
 <body>
+  <div>
     <h1>WELCOME TO MINIGAME ZONE</h1>
-    <h2>Please Log in or Sign Up</h2>
+    <h2>Create Account</h2>
+    <input type="text" id="signup-name" placeholder="Enter your Name">
+    <input type="text" id="signup-email" placeholder="Enter your Email">
+    <input type="password" id="signup-pass" placeholder="Create Password (min 7)">
+    <p id="signup-error" style="color:#ff4444; font-size:13px; display:none;"></p>
+    <button onclick="signup()">Sign Up</button>
+
+    <hr class="divider">
+        <p class="signup-text">
+            Already have an account? 
+            <span onclick="showLogin()">Log In</span>
+        </p>
     <input type="text" id="email" placeholder="Enter your Email"><br>
     <br>
     <input type="password" id="pass" placeholder="Enter Password"><br>
     <br>
     <p id="error" style="color:red; display:none;">Please fill in both fields!</p>
     <button onclick="login()">Log In</button>
+  </div>
+    
     <script src="login.js"></script>
 
 
