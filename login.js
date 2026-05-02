@@ -21,6 +21,8 @@ function login() {
         error.style.display = 'block';
         return;
     }
+localStorage.setItem('userEmail', email);
+localStorage.setItem('userPassword', password);    
 window.location.href = 'home.html';
 
     
