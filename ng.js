@@ -53,3 +53,5 @@ function resetGame() {
     document.getElementById('attempts').textContent = '';
     document.getElementById('hint').textContent = '';
 }
+
+//this code is written by divyam
