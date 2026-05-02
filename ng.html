@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #011a14;
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+
+    h1 {
+    margin-top: 40px;
+    color: wheat;
+    }
+
+    p {
+    font-size: 16px;
+    }
+
+    input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    }
+
+    button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background: wheat;
+    color: black;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+    button:hover {
+    background: #c8a96e;
+    }
+
+    .row {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    }
+
+    #message  { color: wheat;  margin-top: 20px; }
+    #attempts { color: #aaa;   margin-top: 5px;  }
+    #hint     { color: #aaa;   margin-top: 5px;  }
+  </style>
+    
+</head>
+
+<body>
+    <h1>Guess a Number</h1>
+    <p>Enter a Number Between 1 And 100</p>
+    <input type="number" id="guess" placeholder="Enter No." min="1" max="100" onkeydown="if(event.key==='Enter') checkGuess()" size="30px">
+    <button onclick="checkGuess()">Guess</button>
+    <button onclick="resetGame()">New Game</button>
+    <p id="message"></p>
+    <p id="attempts"></p>
+    <p id="hint"></p> 
+    <script src="ng.js"></script>
+    <audio id="wrongSound" src="apbala_GHgDfLAH.mp3"></audio>
+    <audio id="right" src="jitgye.mpeg"></audio>
+</body>
+</html>
