@@ -14,5 +14,10 @@ function login(){
     return;
      
 }
+ if (password.length < 7) {
+        error.textContent = '⚠️ Password must be at least 7 characters!';
+        error.style.display = 'block';
+        return;
+ }
 window.location.href = 'home.html'; 
 }
