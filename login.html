@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+      margin: 0;
+      padding: 0;
+      background-color: #033860;
+      color: white;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #00ff88;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 16px;
+      color: white;
+      margin-bottom: 30px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    input {
+      width: 300px;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      background: #f3affb00;
+      border: 1px solid #00ff88;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+      font-family: 'Courier New', monospace;
+      outline: none;
+      display: block;
+    }
+
+    input:focus {
+      border-color: #00ffff;
+      box-shadow: 0 0 8px #00ffff;
+    }
+
+    button {
+      width: 330px;
+      padding: 12px;
+      margin-top: 10px;
+      background: #00ff88;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    button:hover {
+      background: #00ffff;
+    }
+
+    #error {
+      color: #ff4444;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>WELCOME TO MINIGAME ZONE</h1>
+    <h2>Please Log in or Sign Up</h2>
+    <input type="text" id="email" placeholder="Enter your Email"><br>
+    <br>
+    <input type="password" id="pass" placeholder="Enter Password"><br>
+    <br>
+    <p id="error" style="color:red; display:none;">Please fill in both fields!</p>
+    <button onclick="login()">Log In</button>
+    <script src="login.js"></script>
+
+
+</body>
+</html>
