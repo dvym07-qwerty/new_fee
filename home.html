@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games Page</title>
+    
+    <style>
+       
+
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f2e;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a40;
+      text-align: center;
+      padding: 30px;
+      border-bottom: 2px solid #6c63ff;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #a78bfa;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #ccc;
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    nav {
+      background: #1a1a40;
+      text-align: center;
+      padding: 12px;
+      border-bottom: 1px solid #6c63ff;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #a78bfa;
+    }
+
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .content h2 {
+      font-size: 26px;
+      color: #a78bfa;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #aaa;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    .game-grid {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 210px;
+      padding: 35px 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #333;
+      background: #1a1a40;
+      transition: transform 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+    }
+
+    .box .icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .box h2 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .box p {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .box a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .rps:hover { border-color: #6c63ff; box-shadow: 0 0 15px #6c63ff33; }
+    .num:hover { border-color: #f472b6; box-shadow: 0 0 15px #f472b633; }
+    .ttt:hover { border-color: #34d399; box-shadow: 0 0 15px #34d39933; }
+
+    .rps .icon { color: #6c63ff; }
+    .num .icon { color: #f472b6; }
+    .ttt .icon { color: #34d399; }
+
+    .rps h2 { color: #a78bfa; }
+    .num h2 { color: #f9a8d4; }
+    .ttt h2 { color: #6ee7b7; }
+
+    footer {
+      background: #1a1a40;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #6c63ff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Mini Game Zone</h1>
+  </header>
+
+  
+
+  <div class="content">
+    <h2>Choose a Game</h2>
+    <p>Pick any game below to start playing!</p>
+
+    <div class="game-grid">
+      <div class="box rps">
+      <h2> <a href="rck_ppr_ssr.html" class="rock_paper">✊ Rock Paper Scissors</a> </h2>
+        <p>Beat the CPU</p>
+      </div>
+
+      <div class="box num">
+        <h2> <a href="ng.html" class="ng">🎯 Number Guessing</a></h2>
+        <p>Guess 1 to 100</p>
+      </div>
+
+      <div class="box ttt">
+        <h2><a href="ttt.html"⬜ >Tic Tac Toe</a></h2>
+        <p>X vs O</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Mini Game Zone
+  </footer>
+
+</body>
+</html>
+        
+    
