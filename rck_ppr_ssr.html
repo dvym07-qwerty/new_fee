@@ -7,7 +7,124 @@
     <title>Document</title>
 
     <style>
-        * {
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0f0f2e;
+      color: white;
+      font-family: 'Exo 2', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .game-header {
+      width: 100%;
+      background: #1a1a40;
+      border-bottom: 2px solid #6c63ff;
+      text-align: center;
+      padding: 22px 20px 16px;
+    }
+
+    .game-header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 26px;
+      color: #a78bfa;
+      letter-spacing: 3px;
+    }
+
+    .game-header p { color: #aaa; font-size: 13px; margin-top: 6px; }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #aaa;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #a78bfa; }
+
+    .game-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px 80px;
+    }
+
+    .move-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .move_button {
+      background: #1a1a40;
+      border: 2px solid #6c63ff;
+      border-radius: 50%;
+      padding: 22px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .move_button:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 18px #6c63ff55;
+      border-color: #a78bfa;
+    }
+
+    .move_img { height: 50px; }
+
+    .js_p_scores {
+      font-size: 16px;
+      color: #a78bfa;
+      text-align: center;
+      line-height: 2.2;
+      margin-bottom: 24px;
+    }
+
+    .game-status {
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      min-height: 28px;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 11px 28px;
+      font-size: 14px;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary { background: #6c63ff; color: #fff; }
+    .btn-primary:hover { background: #a78bfa; transform: translateY(-2px); }
+
+    footer {
+      background: #1a1a40;
+      color: #aaa;
+      text-align: center;
+      padding: 14px;
+      border-top: 1px solid #6c63ff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 13px;
+    }
+        /* * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -112,7 +229,7 @@
     }
     .move_button {
   display: inline-block;
-}
+} */
     </style>
 </head>
 <body>
