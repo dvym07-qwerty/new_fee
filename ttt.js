@@ -45,7 +45,7 @@
     }
 
     function computerMove() {
-      if (Math.random() < 0.1) {
+      if (Math.random() < 0.3) {
         let empty = [];
 
     for (let i = 0; i < 9; i++) {
