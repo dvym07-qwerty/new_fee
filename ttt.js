@@ -45,20 +45,49 @@
     }
 
     function computerMove() {
-      let bestScore = -Infinity;
-      let bestMove = -1;
-      for (let i = 0; i < 9; i++) {
-        if (!board[i]) {
-          board[i] = 'O';
-          let score = minimax(board, false);
-          board[i] = '';
-          if (score > bestScore) {
-            bestScore = score;
-            bestMove = i;
-          }
-        }
+      if (Math.random() < 0.5) {
+        let empty = [];
+
+    for (let i = 0; i < 9; i++) {
+      if (!board[i]) empty.push(i);
+    }
+
+    let randomIndex = empty[Math.floor(Math.random() * empty.length)];
+    markCell(randomIndex, 'O');
+    return;
+  }
+
+  // Otherwise play smart (minimax)
+  let bestScore = -Infinity;
+  let bestMove = -1;
+
+  for (let i = 0; i < 9; i++) {
+    if (!board[i]) {
+      board[i] = 'O';
+      let score = minimax(board, false);
+      board[i] = '';
+      if (score > bestScore) {
+        bestScore = score;
+        bestMove = i;
       }
-      markCell(bestMove, 'O');
+    }
+  }
+
+  markCell(bestMove, 'O');
+      // let bestScore = -Infinity;
+      // let bestMove = -1;
+      // for (let i = 0; i < 9; i++) {
+      //   if (!board[i]) {
+      //     board[i] = 'O';
+      //     let score = minimax(board, false);
+      //     board[i] = '';
+      //     if (score > bestScore) {
+      //       bestScore = score;
+      //       bestMove = i;
+      //     }
+      //   }
+      // }
+      // markCell(bestMove, 'O');
     }
 
     function markCell(i, player) {
