@@ -45,7 +45,7 @@
     }
 
     function computerMove() {
-      if (Math.random() < 0.5) {
+      if (Math.random() < 0.1) {
         let empty = [];
 
     for (let i = 0; i < 9; i++) {
@@ -108,7 +108,7 @@
       markCell(i, 'X');
 
       if (checkWin(board, 'X')) {
-        setStatus('You win! 🎉');
+        setStatus('You win! ');
         over = true;
         return;
       }
@@ -125,7 +125,7 @@
         computerMove();
 
         if (checkWin(board, 'O')) {
-          setStatus('Computer wins! 🤖');
+          setStatus('Computer wins! ');
           over = true;
           return;
         }
